@@ -8,8 +8,8 @@ const LoveLetter = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-display font-bold text-center text-gradient-rose mb-12"
-        >
+          className="text-3xl md:text-5xl font-display font-bold text-center text-gradient-rose mb-12">
+          
           A Letter For You
         </motion.h2>
 
@@ -18,23 +18,27 @@ const LoveLetter = () => {
           whileInView={{ opacity: 1, y: 0, rotate: -1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="love-card p-8 md:p-12 transform -rotate-1"
-        >
+          className="love-card p-8 md:p-12 transform -rotate-1">
+          
           <div className="font-handwriting text-lg md:text-xl leading-loose text-foreground/80 space-y-6">
             <p>My Dearest,</p>
             <p>
-              From the moment you walked into my life, everything changed for the better. 
-              You brought colors I never knew existed, melodies I'd never heard, and a 
-              warmth that I never want to live without.
+              ​you are literally perfect saashiiii dont you worry i am with you everytime . share everything w me baeee. i lovee youu soo soo muchhhhh merii jannn .                             
+            
+
             </p>
             <p>
-              Every day with you feels like a gift I don't deserve but will never stop 
-              being grateful for. You are my best friend, my greatest adventure, and 
-              the love of my life.
+              literally my heart babe srsly my heart youuu areee.        
+            
+
             </p>
             <p>
-              I promise to love you in your darkest hours and celebrate you in your 
-              brightest. You are everything to me — today, tomorrow, and always.
+              i can write soo much but rn i am soo full of emotions babee 
+you are so bestt girlfriend saashii i am soo happy with you 
+tang kara krr  ekoo pleaseeeeeeeeeeeeeeeeeeeeeeeee.       
+             
+              
+            
             </p>
             <p className="text-right mt-8">
               Forever yours,<br />
@@ -43,8 +47,4 @@ const LoveLetter = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
-};
-
-export default LoveLetter;
+    </section>);};export default LoveLetter;
