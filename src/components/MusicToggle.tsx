@@ -6,7 +6,7 @@ const START_TIME = 160; // 2:40
 const END_TIME = 220;   // 3:40
 
 const MusicToggle = () => {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
