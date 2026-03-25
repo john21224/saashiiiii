@@ -5,20 +5,20 @@ const milestones = [
   {
     icon: Heart,
     title: "How We Met",
-    date: "The Day Everything Changed",
-    description: "Our eyes met and the world stopped for a moment. It was the beginning of the most beautiful chapter of my life.",
+    date: "March 8, 2025",
+    description: "I did something on daa perfect girl's story — and honestly, it was the best thing I ever did. That one little move changed everything. 💕",
   },
   {
     icon: Calendar,
     title: "Our First Date",
-    date: "Butterflies & Smiles",
-    description: "I was so nervous, but the moment you smiled, everything felt right. That night, I knew you were special.",
+    date: "Coming Soon in May ✨",
+    description: "It's still pending, but I already know it's gonna be the BEST date ever. Obviously. Because it's with you, Saashi. 🥰",
   },
   {
     icon: Star,
     title: "Favorite Memories",
     date: "Every Moment With You",
-    description: "From late-night conversations to spontaneous adventures — every second with you becomes my favorite memory.",
+    description: "Everything with you — the calls, the VCs, even the fights — were the best because of how amazing you are, Saashi. Every second is my favorite. 💖",
   },
 ];
 
