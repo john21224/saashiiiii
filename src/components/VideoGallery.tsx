@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 
 const videos = [
-{ src: "/videos/video1.MOV", caption: "Our cutest moment 💕" },
-{ src: "/videos/video2.MP4", caption: "That time we couldn't stop laughing 😂" },
-{ src: "/videos/video3.MOV", caption: "Us being us ❤️" },
-{ src: "/videos/video4.MP4", caption: "My favorite video of you 🥰" }];
+  { src: "/videos/video1.MOV", caption: "whatt a beautyyy " },
+  { src: "/videos/video2.MP4", caption: "wowoowowowoww" },
+  { src: "/videos/video3.MOV", caption: "soooo sohniiiiiiioii" },
+  { src: "/videos/video4.MP4", caption: "sohniyeeeeeeeeeeeeeeeeeeeeeee" },
+];
 
 
 const container = {
@@ -36,8 +37,7 @@ const VideoGallery = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="text-center text-muted-foreground font-body mb-16">
-
-
+          every record is just perfectt baee saari vids photos bestestttttt
         </motion.p>
 
         <motion.div
