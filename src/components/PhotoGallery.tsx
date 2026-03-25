@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const photos = [
-  { src: "/images/photo1.JPG", caption: "Our first adventure together" },
-  { src: "/images/photo2.JPG", caption: "That sunset we'll never forget" },
-  { src: "/images/photo3.JPG", caption: "Laughing until we cried" },
-  { src: "/images/photo4.JPG", caption: "Our favorite spot" },
-  { src: "/images/photo5.JPG", caption: "The look of pure happiness" },
-  { src: "/images/photo6.JPG", caption: "Forever & always" },
+  { src: "/images/photo1.JPG", caption: "" },
+  { src: "/images/photo2.JPG", caption: "" },
+  { src: "/images/photo3.JPG", caption: "" },
+  { src: "/images/photo4.JPG", caption: "" },
+  { src: "/images/photo5.JPG", caption: "" },
+  { src: "/images/photo6.JPG", caption: "" },
 ];
 
 const container = {

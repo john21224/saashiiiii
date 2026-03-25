@@ -36,8 +36,7 @@ const VideoGallery = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="text-center text-muted-foreground font-body mb-16">
-
-
+          every record is just perfectt baee saari vids photos bestestttttt
         </motion.p>
 
         <motion.div

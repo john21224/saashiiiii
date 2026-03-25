@@ -5,7 +5,7 @@ const milestones = [
   {
     icon: Heart,
     title: "How We Met",
-    date: "March 8, 2025",
+    date: "2023",
     description: "I did something on daa perfect girl's story — and honestly, it was the best thing I ever did. That one little move changed everything. 💕",
   },
   {
