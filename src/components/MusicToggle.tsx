@@ -1,13 +1,43 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { motion } from "framer-motion";
 
+const START_TIME = 160; // 2:40
+const END_TIME = 220;   // 3:40
+
 const MusicToggle = () => {
   const [playing, setPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audio = new Audio("/audio/background.mp3");
+    audio.loop = true;
+    audio.currentTime = START_TIME;
+    audioRef.current = audio;
+
+    const handleTimeUpdate = () => {
+      if (audio.currentTime >= END_TIME) {
+        audio.currentTime = START_TIME;
+      }
+    };
+    audio.addEventListener("timeupdate", handleTimeUpdate);
+
+    return () => {
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.pause();
+    };
+  }, []);
 
   const toggle = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (playing) {
+      audio.pause();
+    } else {
+      audio.currentTime = START_TIME;
+      audio.play();
+    }
     setPlaying(!playing);
-    // Users can add an audio element with their own romantic song
   };
 
   return (
