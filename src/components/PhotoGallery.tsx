@@ -27,7 +27,7 @@ const PhotoGallery = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-display font-bold text-center text-gradient-rose mb-16">
-          loookk at thiss please se krvado ye
+          look at thissss whattt a shawtyy hawtyyy
         </motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
