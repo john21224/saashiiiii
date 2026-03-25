@@ -14,6 +14,9 @@ const MusicToggle = () => {
     audio.loop = true;
     audio.currentTime = START_TIME;
     audioRef.current = audio;
+    audio.play().catch(() => {
+      setPlaying(false);
+    });
 
     const handleTimeUpdate = () => {
       if (audio.currentTime >= END_TIME) {
