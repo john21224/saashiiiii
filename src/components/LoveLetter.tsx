@@ -41,8 +41,8 @@ tang kara krr  ekoo pleaseeeeeeeeeeeeeeeeeeeeeeeee.
             
             </p>
             <p className="text-right mt-8">
-              Forever yours,<br />
-              <span className="text-primary text-2xl">With all my love ❤️</span>
+              john aka jaanveerrrrrrrrr<br />
+              <span className="text-primary text-2xl">kyaaaaaaaaaaaaaaaaaaa</span>
             </p>
           </div>
         </motion.div>
