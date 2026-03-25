@@ -12,14 +12,19 @@ const MusicToggle = () => {
   useEffect(() => {
     const audio = new Audio("/audio/background.mp3");
     audio.loop = true;
-    audio.currentTime = START_TIME;
     audioRef.current = audio;
-    audio.play().catch(() => {
-      setPlaying(false);
+
+    const setStart = () => {
+      audio.currentTime = START_TIME;
+    };
+
+    audio.addEventListener("loadedmetadata", () => {
+      audio.currentTime = START_TIME;
+      audio.play().catch(() => setPlaying(false));
     });
 
     const handleTimeUpdate = () => {
-      if (audio.currentTime >= END_TIME) {
+      if (audio.currentTime < START_TIME || audio.currentTime >= END_TIME) {
         audio.currentTime = START_TIME;
       }
     };
