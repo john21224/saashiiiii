@@ -1,39 +1,25 @@
-import { useEffect, useState } from "react";
-
-interface Heart {
-  id: number;
-  left: number;
-  size: number;
-  delay: number;
-  duration: number;
-  opacity: number;
-  type: string;
-}
-
-const heartTypes = ["♥", "♡", "❤", "💕"];
+import { useMemo } from "react";
 
 const FloatingHearts = () => {
-  const [hearts, setHearts] = useState<Heart[]>([]);
-
-  useEffect(() => {
-    const generated: Heart[] = Array.from({ length: 20 }, (_, i) => ({
-      id: i,
-      left: Math.random() * 100,
-      size: Math.random() * 16 + 10,
-      delay: Math.random() * 10,
-      duration: Math.random() * 6 + 6,
-      opacity: Math.random() * 0.25 + 0.05,
-      type: heartTypes[Math.floor(Math.random() * heartTypes.length)],
-    }));
-    setHearts(generated);
-  }, []);
+  const hearts = useMemo(
+    () =>
+      Array.from({ length: 8 }, (_, i) => ({
+        id: i,
+        left: (i * 12.5) + Math.random() * 8,
+        size: 12 + (i % 3) * 4,
+        delay: i * 1.5,
+        duration: 8 + (i % 3) * 2,
+        opacity: 0.08 + (i % 3) * 0.05,
+      })),
+    []
+  );
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
       {hearts.map((heart) => (
         <span
           key={heart.id}
-          className="absolute bottom-0 text-primary"
+          className="absolute bottom-0 text-primary will-change-transform"
           style={{
             left: `${heart.left}%`,
             fontSize: `${heart.size}px`,
@@ -41,7 +27,7 @@ const FloatingHearts = () => {
             animation: `float-heart ${heart.duration}s ease-in ${heart.delay}s infinite`,
           }}
         >
-          {heart.type}
+          ♥
         </span>
       ))}
     </div>
