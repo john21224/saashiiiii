@@ -1,17 +1,10 @@
 import { motion } from "framer-motion";
 
 const videos = [
-  { caption: "Our cutest moment 💕" },
-  { caption: "That time we couldn't stop laughing 😂" },
-  { caption: "Us being us ❤️" },
-  { caption: "My favorite video of you 🥰" },
-];
-
-const pastelColors = [
-  "from-rose-light to-lavender",
-  "from-lavender to-blush",
-  "from-blush to-cream",
-  "from-cream to-rose-light",
+  { src: "/videos/video1.MOV", caption: "Our cutest moment 💕" },
+  { src: "/videos/video2.MP4", caption: "That time we couldn't stop laughing 😂" },
+  { src: "/videos/video3.MOV", caption: "Us being us ❤️" },
+  { src: "/videos/video4.MP4", caption: "My favorite video of you 🥰" },
 ];
 
 const VideoGallery = () => {
@@ -43,32 +36,18 @@ const VideoGallery = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ scale: 1.02 }}
-              className="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer love-card"
+              className="overflow-hidden rounded-2xl love-card"
             >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${pastelColors[index]} flex items-center justify-center`}
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                    <svg
-                      className="w-8 h-8 text-primary ml-1"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <span className="text-muted-foreground text-sm font-body">
-                    Add your video here
-                  </span>
-                </div>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-primary-foreground font-body text-sm font-medium drop-shadow-lg">
-                  {video.caption}
-                </p>
-              </div>
+              <video
+                src={video.src}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full aspect-video object-cover"
+              />
+              <p className="text-center text-muted-foreground font-body text-sm py-3">
+                {video.caption}
+              </p>
             </motion.div>
           ))}
         </div>
