@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import OurStory from "@/components/OurStory";
 import ReasonsILoveYou from "@/components/ReasonsILoveYou";
 import PhotoGallery from "@/components/PhotoGallery";
+import VideoGallery from "@/components/VideoGallery";
 import LoveLetter from "@/components/LoveLetter";
 import SurpriseSection from "@/components/SurpriseSection";
 import RomanticFooter from "@/components/RomanticFooter";
