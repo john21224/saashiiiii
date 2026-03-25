@@ -1,18 +1,12 @@
 import { motion } from "framer-motion";
-import photo1 from "@/assets/photo1.JPG";
-import photo2 from "@/assets/photo2.JPG";
-import photo3 from "@/assets/photo3.JPG";
-import photo4 from "@/assets/photo4.JPG";
-import photo5 from "@/assets/photo5.JPG";
-import photo6 from "@/assets/photo6.JPG";
 
 const photos = [
-  { src: photo1, caption: "Our first adventure together" },
-  { src: photo2, caption: "That sunset we'll never forget" },
-  { src: photo3, caption: "Laughing until we cried" },
-  { src: photo4, caption: "Our favorite spot" },
-  { src: photo5, caption: "The look of pure happiness" },
-  { src: photo6, caption: "Forever & always" },
+  { src: "/images/photo1.JPG", caption: "Our first adventure together" },
+  { src: "/images/photo2.JPG", caption: "That sunset we'll never forget" },
+  { src: "/images/photo3.JPG", caption: "Laughing until we cried" },
+  { src: "/images/photo4.JPG", caption: "Our favorite spot" },
+  { src: "/images/photo5.JPG", caption: "The look of pure happiness" },
+  { src: "/images/photo6.JPG", caption: "Forever & always" },
 ];
 
 const PhotoGallery = () => {
