@@ -18,6 +18,7 @@ const Index = () => {
       <OurStory />
       <ReasonsILoveYou />
       <PhotoGallery />
+      <VideoGallery />
       <LoveLetter />
       <SurpriseSection />
       <RomanticFooter />
