@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
 const reasons = [
-  { emoji: "✨", text: "Your smile lights up my entire world" },
-  { emoji: "🌙", text: "You make even ordinary moments feel magical" },
-  { emoji: "💫", text: "Your kindness inspires me every day" },
-  { emoji: "🦋", text: "You give me butterflies, still, every single time" },
-  { emoji: "🌸", text: "You understand me like no one else ever has" },
-  { emoji: "💕", text: "You make me want to be a better person" },
-  { emoji: "🌈", text: "Your laugh is my favorite sound in the world" },
-  { emoji: "🍀", text: "I'm the luckiest person alive because of you" },
+  { emoji: "✨", text: "You are literally perfect, Saashi. In every single way." },
+  { emoji: "🥺", text: "You're so sensitive and I loveee that so much about you." },
+  { emoji: "📚", text: "You overthink, so I get the chance to teach you with love 💕" },
+  { emoji: "🦋", text: "You give me butterflies every time, every second." },
+  { emoji: "🍅", text: "I love when you get angry — perfect little tomato 😤❤️" },
+  { emoji: "💖", text: "Your prettiness, your voice, your everything is my favorite." },
+  { emoji: "🤭", text: "Your overthinking means I get more time to talk to you hehe" },
+  { emoji: "🍀", text: "I am the luckiest person alive because of you." },
 ];
 
 const ReasonsILoveYou = () => {
