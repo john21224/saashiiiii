@@ -7,36 +7,52 @@ const videos = [
   { src: "/videos/video4.MP4", caption: "My favorite video of you 🥰" },
 ];
 
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 40, filter: "blur(6px)" },
+  show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.6, type: "spring", stiffness: 80 } },
+};
+
 const VideoGallery = () => {
   return (
     <section className="section-padding bg-secondary/30">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="text-3xl md:text-5xl font-display font-bold text-center text-gradient-rose mb-6"
         >
           our little videosss 🎬
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
           className="text-center text-muted-foreground font-body mb-16"
         >
           every second with you is worth recording ❤️
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {videos.map((video, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="overflow-hidden rounded-2xl love-card"
+              variants={item}
+              whileHover={{ y: -6, boxShadow: "0 12px 40px hsl(340 60% 65% / 0.15)" }}
+              className="overflow-hidden rounded-2xl love-card transition-shadow duration-300"
             >
               <video
                 src={video.src}
@@ -50,7 +66,7 @@ const VideoGallery = () => {
               </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

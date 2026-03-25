@@ -7,19 +7,23 @@ interface Heart {
   delay: number;
   duration: number;
   opacity: number;
+  type: string;
 }
+
+const heartTypes = ["♥", "♡", "❤", "💕"];
 
 const FloatingHearts = () => {
   const [hearts, setHearts] = useState<Heart[]>([]);
 
   useEffect(() => {
-    const generated: Heart[] = Array.from({ length: 15 }, (_, i) => ({
+    const generated: Heart[] = Array.from({ length: 20 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       size: Math.random() * 16 + 10,
-      delay: Math.random() * 8,
-      duration: Math.random() * 4 + 5,
-      opacity: Math.random() * 0.3 + 0.1,
+      delay: Math.random() * 10,
+      duration: Math.random() * 6 + 6,
+      opacity: Math.random() * 0.25 + 0.05,
+      type: heartTypes[Math.floor(Math.random() * heartTypes.length)],
     }));
     setHearts(generated);
   }, []);
@@ -37,7 +41,7 @@ const FloatingHearts = () => {
             animation: `float-heart ${heart.duration}s ease-in ${heart.delay}s infinite`,
           }}
         >
-          ♥
+          {heart.type}
         </span>
       ))}
     </div>
