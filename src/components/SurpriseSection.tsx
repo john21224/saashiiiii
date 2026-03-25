@@ -55,24 +55,15 @@ const SurpriseSection = () => {
               transition={{ type: "spring", duration: 0.8, bounce: 0.4 }}
               className="love-card p-10 md:p-14 relative overflow-hidden"
             >
-              {/* Celebration sparkles */}
-              {[...Array(8)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute text-primary/40"
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{
-                    opacity: [0, 1, 0],
-                    scale: [0, 1.2, 0],
-                    x: [0, (Math.random() - 0.5) * 200],
-                    y: [0, (Math.random() - 0.5) * 200],
-                  }}
-                  transition={{ duration: 1.5, delay: i * 0.1 }}
-                  style={{ top: "50%", left: "50%" }}
-                >
-                  <Sparkles className="w-4 h-4" />
-                </motion.div>
-              ))}
+              {/* Simple sparkle */}
+              <motion.div
+                className="absolute text-primary/40 top-4 right-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ duration: 1.5 }}
+              >
+                <Sparkles className="w-5 h-5" />
+              </motion.div>
 
               <motion.div
                 initial={{ scale: 0, rotate: -180 }}
