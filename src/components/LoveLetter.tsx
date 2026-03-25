@@ -4,25 +4,8 @@ import { Heart } from "lucide-react";
 const LoveLetter = () => {
   return (
     <section className="section-padding romantic-gradient relative overflow-hidden">
-      {/* Decorative hearts */}
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute text-primary/10"
-          animate={{
-            y: [0, -20, 0],
-            rotate: [0, 10, -10, 0],
-          }}
-          transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.8 }}
-          style={{
-            top: `${20 + i * 15}%`,
-            left: `${5 + i * 20}%`,
-            fontSize: `${20 + i * 8}px`,
-          }}
-        >
-          ♥
-        </motion.div>
-      ))}
+      {/* Single decorative heart */}
+      <div className="absolute text-primary/10 top-1/4 left-[10%] text-4xl">♥</div>
 
       <div className="max-w-2xl mx-auto relative z-10">
         <motion.h2
