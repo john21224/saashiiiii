@@ -6,7 +6,7 @@ const START_TIME = 160; // 2:40
 const END_TIME = 220;   // 3:40
 
 const MusicToggle = () => {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -14,6 +14,9 @@ const MusicToggle = () => {
     audio.loop = true;
     audio.currentTime = START_TIME;
     audioRef.current = audio;
+    audio.play().catch(() => {
+      setPlaying(false);
+    });
 
     const handleTimeUpdate = () => {
       if (audio.currentTime >= END_TIME) {
