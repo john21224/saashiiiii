@@ -6,6 +6,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import VideoGallery from "@/components/VideoGallery";
 import LoveLetter from "@/components/LoveLetter";
 import SurpriseSection from "@/components/SurpriseSection";
+import ThreeMonthsPopup from "@/components/ThreeMonthsPopup";
 import RomanticFooter from "@/components/RomanticFooter";
 import MusicToggle from "@/components/MusicToggle";
 
