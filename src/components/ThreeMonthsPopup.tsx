@@ -60,16 +60,22 @@ const ThreeMonthsPopup = () => {
 
               <div className="space-y-4 font-handwriting text-lg md:text-xl text-foreground leading-relaxed text-center">
                 <p>
-                  Saashi, it's been 3 months since you came into my life, and honestly — it feels like the universe finally did something right. 🌙
+                  Saashi, it's been 3 months since "uss bbyyy doll  and honestly  it is the best decision of my life tbhh i lovee youu merii jannnnnnn. 🌙
                 </p>
                 <p>
-                  Every call, every late-night VC, every random "tu soja" fight — I wouldn't trade any of it for anything in the world. 💕
+                  bbyyy i lovee youu soo frickingg muchh srsllyy you are the bestt and perfectestt saashii donttt youu worry bout nothing. bby everything is goiing great and it will be bestttt trust the process
                 </p>
                 <p>
-                  You make even the boring days feel magical. You make me want to be better, try harder, and love deeper — all because you deserve the absolute best.
+                  even your studies and stuf will goo great babe trust yourself and ofccc meee in rltn bbyy . you are justtt perfectt for me saashi there is no reason for me to unlove you. bbyy i just need you by my side baaki to i can handle everything coz i lovee you more than anything 
                 </p>
                 <p>
-                  These 3 months were just the beginning, baby. I'm here for every month, every year, every lifetime with you. 🥺❤️
+                  ik some days get low butt bby dont loose your morale bbyy doll we are in rltn nd its bestttt we need to maintain our bestnessssss
+                </p>
+                <p>
+                  you are so perfect for me bby trust me i am here for evrythhing your happpiness sadness overthinking anger emo excited and everything
+                </p>
+                <p>
+                  i am so happy in this rltn like happiest bby very lucky to find zzuuu meri jaanemannnnnnn.
                 </p>
                 <p className="text-primary font-display font-semibold text-xl pt-2">
                   Forever yours, always and forever 🌹✨
