@@ -22,6 +22,7 @@ const Index = () => {
       <VideoGallery />
       <LoveLetter />
       <SurpriseSection />
+      <ThreeMonthsPopup />
       <RomanticFooter />
     </div>
   );
