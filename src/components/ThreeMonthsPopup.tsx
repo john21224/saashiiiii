@@ -2,8 +2,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X } from "lucide-react";
 
+const REVEAL_DATE = new Date("2026-03-31T05:00:00+05:30");
+
 const ThreeMonthsPopup = () => {
   const [open, setOpen] = useState(false);
+  const isRevealed = new Date() >= REVEAL_DATE;
+
+  if (!isRevealed) return null;
 
   return (
     <>
