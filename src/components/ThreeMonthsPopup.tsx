@@ -6,7 +6,7 @@ const REVEAL_DATE = new Date("2026-03-31T05:00:00+05:30");
 
 const ThreeMonthsPopup = () => {
   const [open, setOpen] = useState(false);
-  const isRevealed = true; // TODO: revert to `new Date() >= REVEAL_DATE` before March 31
+  const isRevealed = new Date() >= REVEAL_DATE;
 
   if (!isRevealed) return null;
 
