@@ -77,7 +77,8 @@ const ThreeMonthsPopup = () => {
                   ik some days get low butt bby dont loose your morale bbyy doll we are in rltn nd its bestttt we need to maintain our bestnessssss
                 </p>
                 <p>
-                  you are so perfect for me bby trust me i am here for evrythhing your happpiness sadness overthinking anger emo excited and everything
+                  you are so perfect for me bby trust me i am here for evrythhing your happpiness sadness overthinking anger emo excited and everything<br />
+                  we will see your method saaashi of space but babe i love you so much nothing is more imp to me rather than u saashi i just cant i mean i am trying babe but i love you soo much saashi literally soo much
                 </p>
                 <p>
                   i am so happy in this rltn like happiest bby very lucky to find zzuuu meri jaanemannnnnnn.
