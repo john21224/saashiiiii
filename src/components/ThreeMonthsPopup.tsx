@@ -8,11 +8,7 @@ const REVEAL_DATE = new Date("2026-03-31T05:00:00+05:30");
 const ThreeMonthsPopup = () => {
   const [open, setOpen] = useState(false);
   const [dismissed, setDismissed] = useState(false);
-  const now = new Date();
-  const isRevealed = now >= REVEAL_DATE;
-
-  // Hidden until March 31, 2026 5:00 AM IST
-  if (!isRevealed) return null;
+  const isRevealed = true; // TEMP PREVIEW - revert to: new Date() >= REVEAL_DATE
 
   return (
     <>
