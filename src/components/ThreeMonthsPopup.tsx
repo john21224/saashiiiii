@@ -11,8 +11,7 @@ const ThreeMonthsPopup = () => {
   const now = new Date();
   const isRevealed = now >= REVEAL_DATE;
 
-  // Hidden until March 31, 2026 5:00 AM IST
-  if (!isRevealed) return null;
+  const isRevealed = true; // TEMP PREVIEW
 
   return (
     <>
