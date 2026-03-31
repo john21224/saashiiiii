@@ -100,7 +100,8 @@ const ThreeMonthsPopup = () => {
                   </p>
                   <p>
                     you are so perfect for me bby trust me i am here for evrythhing your happpiness sadness overthinking anger emo excited and everything<br />
-                    we will see your method saaashi of space but babe i love you so much nothing is more imp to me rather than u saashi i just cant i mean i am trying babe but i love you soo much saashi literally soo much
+                    we will see your method saaashi of space but babe i love you so much nothing is more imp to me rather than u saashi i just cant i mean i am trying babe but i love you soo much saashi literally soo much<br />
+                    bby i already told u in start ki mera brain esa hi h but bby sorry agr kuch v kbhi v bura laga ho i try to keep everything good but sometimes it happens but bby what should i do althought leave it rn. i just love u so much 
                   </p>
                   <p>
                     i am so happy in this rltn like happiest bby very lucky to find zzuuu meri jaanemannnnnnn.
