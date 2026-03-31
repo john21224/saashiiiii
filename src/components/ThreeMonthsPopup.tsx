@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Sparkles } from "lucide-react";
 import FallingFlowers from "./FallingFlowers";
@@ -87,7 +87,47 @@ const ThreeMonthsPopup = () => {
                   }}
                 />
 
-                <div className="p-8 md:p-12">
+                {/* Sparkle particles */}
+                <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
+                  {Array.from({ length: 18 }).map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute rounded-full"
+                      style={{
+                        width: 3 + Math.random() * 4,
+                        height: 3 + Math.random() * 4,
+                        left: `${8 + Math.random() * 84}%`,
+                        top: `${8 + Math.random() * 84}%`,
+                        background: `hsl(340 ${50 + Math.random() * 30}% ${65 + Math.random() * 20}%)`,
+                      }}
+                      animate={{
+                        opacity: [0, 0.7, 0],
+                        scale: [0, 1, 0],
+                      }}
+                      transition={{
+                        duration: 2 + Math.random() * 2,
+                        repeat: Infinity,
+                        delay: Math.random() * 3,
+                        ease: "easeInOut",
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Shimmer sweep */}
+                <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none">
+                  <motion.div
+                    className="absolute inset-0"
+                    style={{
+                      background: "linear-gradient(110deg, transparent 25%, hsl(340 60% 65% / 0.06) 37%, transparent 63%)",
+                      backgroundSize: "200% 100%",
+                    }}
+                    animate={{ backgroundPosition: ["200% 0", "-200% 0"] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", repeatDelay: 1 }}
+                  />
+                </div>
+
+                <div className="relative p-8 md:p-12">
                   <button
                     onClick={() => setOpen(false)}
                     className="absolute top-6 right-6 text-muted-foreground hover:text-foreground transition-colors bg-background/50 rounded-full p-1.5 backdrop-blur-sm"
