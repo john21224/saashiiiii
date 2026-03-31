@@ -217,6 +217,18 @@ const ThreeMonthsPopup = () => {
                       i am so happy in this rltn like happiest bby very lucky to find zzuuu meri jaanemannnnnnn.
                     </motion.p>
 
+                    <motion.p
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1.35 }}
+                      className="px-2"
+                    >
+                      i hope you gettt ability to see you through my eye then you bill understand how special you are to me baee<br />
+                      idk what i did to recive u saashi but trust me i feel luckiest to have you saashii you are my love but more than that babe you are meriiiiiiii.<br />
+                      ik ldr is tough babe but we are getting through it ik sometimes a hug can fix 1000 problems but dist ahh but still bby you are the most imp to me if if you are far saashi srsly i love you more than anything bbbyy you are so for me bbyy<br />
+                      i hope you feel everything same bby.
+                    </motion.p>
+
                     {/* Decorative divider */}
                     <div className="flex items-center gap-3 pt-2">
                       <div className="flex-1 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
