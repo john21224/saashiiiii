@@ -205,7 +205,13 @@ const ThreeMonthsPopup = () => {
                       transition={{ delay: 1.1 }}
                       className="px-2"
                     >
-                      {"\n"}
+                      you are so perfect for me bby trust me i am here for evrythhing your happpiness sadness overthinking anger emo excited and everything<br />
+                      we will see your method saaashi of space but babe i love you so much nothing is more imp to me rather than u saashi i just cant i mean i am trying babe but i love you soo much saashi literally soo much<br />
+                      bby i already told u in start ki mera brain esa hi h but bby sorry agr kuch v kbhi v bura laga ho i try to keep everything perfect for you babe nd i will keep on trying babe coz you are worth it saashi<br />
+                      again bby if you ask why i love you bby love is feeling nd i have that for you so kisi or ko nahi ho skta i am connect3d with you , you happy w me matters hella alott. i love how you are your habbits personality senstiveness aka emotions. i dont love you in pressure i just feel very love with you. i love you hella so much<br />
+                      i love our momemnts saashi nd i want to create more babe i just want to neglect that fact ki free hoke baat krni bby dolll love requires pain suffer nd many things its for sure so dont think its goonna be easy ki no pressure<br />
+                      stress hogi babe but hold titght i am withyou always so no need to worry thodi stress hori h its gonna be alrr<br />
+                      somedays goes wrong with wrong timing but dont worry this is lifr nd rltn ese hota rhega but hold tight dont tripp we are perfect arent we. we just need to get used to it dont worry babe i love you soo much for your everything baby dont question yourself ki why john loves me mere mai kya h. you can question me i will always give you points which will be true. i always keeep these things rreal where. you are perfect for me thats why i am loving you more nd more each day babe. plz dont worry bbyy everythings gonna be alrright saashuuu u hate this name righttt buttt i loveee youuu saashuuuuuuuu aka sushiiiiiiiii.
                     </motion.p>
 
                     <motion.p
