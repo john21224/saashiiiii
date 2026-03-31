@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Sparkles } from "lucide-react";
 import FallingFlowers from "./FallingFlowers";
